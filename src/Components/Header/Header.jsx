@@ -21,6 +21,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-50}
             activeClass="active"
             className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
           >
@@ -31,11 +32,44 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={-50}
             activeClass="active"
             className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
           >
             About
+          </Link>
+          <Link
+            to="skills"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-50}
+            activeClass="active"
+            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
+          >
+            Skills
+          </Link>
+          <Link
+            to="education"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-50}
+            activeClass="active"
+            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
+          >
+           Education
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-50}
+            activeClass="active"
+            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
+          >
+           Contact
           </Link>
         </div>
 
