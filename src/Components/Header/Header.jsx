@@ -10,7 +10,6 @@ const Header = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-white shadow z-10">
       <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
-
         {/* Left: Logo */}
         <div className="font-bold text-xl text-black">MyLogo</div>
 
@@ -58,7 +57,7 @@ const Header = () => {
             activeClass="active"
             className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
           >
-           Education
+            Education
           </Link>
           <Link
             to="contact"
@@ -69,7 +68,7 @@ const Header = () => {
             activeClass="active"
             className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
           >
-           Contact
+            Contact
           </Link>
         </div>
 
@@ -85,22 +84,25 @@ const Header = () => {
         </div>
 
         {/* Mobile menu button */}
-        <div className="md:hidden text-2xl text-black cursor-pointer" onClick={toggleMenu}>
+        <div
+          className="md:hidden text-2xl text-black cursor-pointer"
+          onClick={toggleMenu}
+        >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow px-6 py-4 space-y-4">
+        <div className="md:hidden bg-white shadow px-6 py-4 space-y-4 text-s">
           <Link
             to="hero"
             spy={true}
             smooth={true}
             duration={500}
+            offset={-50}
             activeClass="active"
-            onClick={toggleMenu} // close menu on click
-            className="block nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
+            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
           >
             Home
           </Link>
@@ -109,20 +111,45 @@ const Header = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={-50}
             activeClass="active"
-            onClick={toggleMenu}
-            className="block nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
+            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
           >
             About
           </Link>
-          <a
-            href="/resume.pdf"
-            download
-            className="block btn bg-[#E63946] text-white border-none hover:bg-black transition"
+          <Link
+            to="skills"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-50}
+            activeClass="active"
+            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
           >
-            Download Resume
-          </a>
+            Skills
+          </Link>
+          <Link
+            to="education"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-50}
+            activeClass="active"
+            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
+          >
+            Education
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-50}
+            activeClass="active"
+            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
+          >
+            Contact
+          </Link>
         </div>
       )}
     </nav>

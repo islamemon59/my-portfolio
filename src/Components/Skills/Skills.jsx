@@ -17,27 +17,82 @@ const skillsData = [
   {
     category: "Frontend",
     skills: [
-      { name: "HTML5", icon: <FaHtml5 />, description: "Markup language for structuring web content", proficiency: 95 },
-      { name: "CSS3", icon: <FaCss3Alt />, description: "Styling language to make websites beautiful", proficiency: 90 },
-      { name: "JavaScript", icon: <FaJs />, description: "Programming language for interactivity and logic", proficiency: 85 },
-      { name: "React.js", icon: <FaReact />, description: "JavaScript library for building UI components", proficiency: 85 },
-      { name: "Tailwind CSS", icon: <SiTailwindcss />, description: "Utility-first CSS framework for rapid UI development", proficiency: 80 },
+      {
+        name: "HTML5",
+        icon: <FaHtml5 />,
+        description: "Markup language for structuring web content",
+        proficiency: 95,
+      },
+      {
+        name: "CSS3",
+        icon: <FaCss3Alt />,
+        description: "Styling language to make websites beautiful",
+        proficiency: 90,
+      },
+      {
+        name: "JavaScript",
+        icon: <FaJs />,
+        description: "Programming language for interactivity and logic",
+        proficiency: 85,
+      },
+      {
+        name: "React.js",
+        icon: <FaReact />,
+        description: "JavaScript library for building UI components",
+        proficiency: 85,
+      },
+      {
+        name: "Tailwind CSS",
+        icon: <SiTailwindcss />,
+        description: "Utility-first CSS framework for rapid UI development",
+        proficiency: 80,
+      },
     ],
   },
   {
     category: "Backend",
     skills: [
-      { name: "Node.js", icon: <FaNodeJs />, description: "JavaScript runtime for backend development", proficiency: 80 },
-      { name: "Express.js", icon: <FaServer />, description: "Minimalist web framework for Node.js", proficiency: 75 },
-      { name: "MongoDB", icon: <DiMongodb />, description: "NoSQL database for scalable data storage", proficiency: 70 },
-      { name: "Firebase", icon: <SiFirebase />, description: "Backend-as-a-Service platform by Google", proficiency: 65 },
+      {
+        name: "Node.js",
+        icon: <FaNodeJs />,
+        description: "JavaScript runtime for backend development",
+        proficiency: 80,
+      },
+      {
+        name: "Express.js",
+        icon: <FaServer />,
+        description: "Minimalist web framework for Node.js",
+        proficiency: 75,
+      },
+      {
+        name: "MongoDB",
+        icon: <DiMongodb />,
+        description: "NoSQL database for scalable data storage",
+        proficiency: 70,
+      },
+      {
+        name: "Firebase",
+        icon: <SiFirebase />,
+        description: "Backend-as-a-Service platform by Google",
+        proficiency: 65,
+      },
     ],
   },
   {
     category: "Tools",
     skills: [
-      { name: "VS Code", icon: <DiVisualstudio />, description: "Popular source-code editor", proficiency: 90 },
-      { name: "GitHub", icon: <FaGithub />, description: "Platform for version control and collaboration", proficiency: 85 },
+      {
+        name: "VS Code",
+        icon: <DiVisualstudio />,
+        description: "Popular source-code editor",
+        proficiency: 90,
+      },
+      {
+        name: "GitHub",
+        icon: <FaGithub />,
+        description: "Platform for version control and collaboration",
+        proficiency: 85,
+      },
     ],
   },
 ];
@@ -61,7 +116,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="py-20 px-6 md:px-16 bg-white text-gray-900 overflow-hidden"
+      className="px-4 py-16 md:py-20 md:px-16 bg-white text-gray-900 overflow-hidden"
     >
       <motion.div
         className="max-w-6xl mx-auto text-center space-y-10"

@@ -34,7 +34,7 @@ const itemVariants = {
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 px-6 md:px-16 bg-white text-black overflow-hidden">
+    <section id="education" className="px-4 pt-16 pb-20 md:py-20 md:px-16 bg-white text-black overflow-hidden">
       <motion.div
         className="max-w-4xl mx-auto space-y-12"
         initial="hidden"

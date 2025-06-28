@@ -2,6 +2,7 @@
 import { FaFacebookF, FaTwitter, FaGithub } from "react-icons/fa";
 import { ReactTyped } from "react-typed"; // corrected import here
 import { motion } from "framer-motion";
+import image from "../../assets/hero.png"
 
 const slideDownVariants = {
   hidden: { opacity: 0, y: -80 },
@@ -14,10 +15,10 @@ const slideDownVariants = {
 
 export default function Banner() {
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:pt-0 bg-white max-w-6xl mx-auto overflow-hidden">
+    <section className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 bg-white max-w-6xl mx-auto overflow-hidden">
       {/* Left */}
       <motion.div
-        className="flex-1 text-center md:text-left space-y-6 md:space-y-8 mt-12 md:mt-0"
+        className="flex-1 text-center md:text-left space-y-6 md:space-y-8 mt-28 md:mt-0"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}
@@ -83,7 +84,7 @@ export default function Banner() {
       >
         <div className="w-52 h-52 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-[#E63946] shadow-lg">
           <img
-            src="/myphoto.jpg" // replace with actual path
+            src={image} // replace with actual path
             alt="Profile"
             className="w-full h-full object-cover"
           />

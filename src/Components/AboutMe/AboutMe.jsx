@@ -13,9 +13,9 @@ const slideDownVariants = {
 
 const AboutMe = () => {
   return (
-    <section id="about" className="py-20 px-6 md:px-16 bg-white overflow-hidden">
+    <section id="about" className="px-4 py-16 md:py-20 md:px-16 bg-white overflow-hidden">
       <motion.div
-        className="max-w-4xl mx-auto text-center space-y-10 p-8 rounded-lg"
+        className="max-w-4xl mx-auto text-center space-y-10 rounded-lg"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}

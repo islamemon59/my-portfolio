@@ -46,7 +46,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 px-6 md:px-16 bg-white text-black overflow-hidden"
+      className="px-4 py-20 md:py-16 md:px-16 bg-white text-black overflow-hidden"
     >
       <motion.div
         className="max-w-4xl mx-auto text-center space-y-10"
@@ -76,7 +76,9 @@ export default function Contact() {
               variants={itemVariants}
             >
               <div className="text-3xl text-[#E63946] mb-3">{contact.icon}</div>
-              <h3 className="text-xl font-semibold text-[#E63946]">{contact.title}</h3>
+              <h3 className="text-xl font-semibold text-[#E63946]">
+                {contact.title}
+              </h3>
               <p className="text-gray-800 mt-1">{contact.value}</p>
             </motion.a>
           ))}

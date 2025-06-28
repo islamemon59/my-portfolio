@@ -16,7 +16,7 @@ const Home = () => {
         <Banner />
       </section>
 
-      <section id="about" className="py-10 md:py-10">
+      <section id="about" className="md:py-10">
         <AboutMe />
       </section>
 
