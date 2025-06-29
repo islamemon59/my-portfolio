@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../../assets/logo.png"
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ const Header = () => {
     <nav className="fixed top-0 left-0 w-full bg-white shadow z-10">
       <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
         {/* Left: Logo */}
-        <div className="font-bold text-xl text-black">MyLogo</div>
+        <div className="font-bold text-xl text-black"><img src={logo} alt="logo" className="w-10" /></div>
 
         {/* Center: Desktop Menu */}
         <div className="hidden md:flex space-x-6">

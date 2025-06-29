@@ -26,7 +26,7 @@ export default function Banner() {
         viewport={{ once: false, amount: 0.3 }}
         variants={slideDownVariants}
       >
-        <h1 className="text-4xl md:text-6xl font-bold text-black">
+        <h1 className="text-4xl md:text-7xl font-bold text-black">
           Emon Hossain
         </h1>
 
