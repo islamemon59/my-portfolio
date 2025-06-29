@@ -7,9 +7,12 @@ import Education from "../Education/Education";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import useActiveSectionTitle from "../../Hooks/useActiveSectionTitle";
+import Projects from "../Projects/Projects";
+import { useLoaderData } from "react-router";
 
 const Home = () => {
-  useActiveSectionTitle()
+  useActiveSectionTitle();
+  const projects = useLoaderData()
   return (
     <div>
       <Header />
@@ -26,13 +29,16 @@ const Home = () => {
         <Skills />
       </section>
       <section id="education" className="py-6 md:py-10">
-        <Education/>
+        <Education />
+      </section>
+      <section id="projects" className="py-6 md:py-10">
+        <Projects projects={projects} />
       </section>
       <section id="contact" className="py-6 md:py-10">
-        <Contact/>
+        <Contact />
       </section>
       <section id="footer">
-        <Footer/>
+        <Footer />
       </section>
     </div>
   );

@@ -61,6 +61,17 @@ const Header = () => {
             Education
           </Link>
           <Link
+            to="education"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-50}
+            activeClass="active"
+            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
+          >
+            Projects
+          </Link>
+          <Link
             to="contact"
             spy={true}
             smooth={true}

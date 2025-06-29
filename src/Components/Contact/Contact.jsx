@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
 
 const containerVariants = {
-  hidden: { opacity: 0, y: -80 },
+  hidden: { opacity: 0, y: -60 },
   visible: {
     opacity: 1,
     y: 0,
@@ -33,14 +33,14 @@ export default function Contact() {
     },
     {
       title: "Phone",
-      value: "+8801872312970",
-      link: "tel:+8801872312970",
+      value: "+8601872312970",
+      link: "tel:+8601872312970",
       icon: <FaPhoneAlt />,
     },
     {
       title: "WhatsApp",
-      value: "+8801920228756",
-      link: "https://wa.me/8801920228756",
+      value: "+8601920228756",
+      link: "https://wa.me/8601920228756",
       icon: <FaWhatsapp />,
     },
   ];
@@ -80,7 +80,7 @@ export default function Contact() {
               <h3 className="text-xl font-semibold text-[#E63946]">
                 {contact.title}
               </h3>
-              <p className="text-gray-800 mt-1">{contact.value}</p>
+              <p className="text-gray-600 mt-1">{contact.value}</p>
             </motion.a>
           ))}
         </motion.div>

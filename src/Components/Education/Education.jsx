@@ -16,7 +16,7 @@ const educationData = [
 ];
 
 const containerVariants = {
-  hidden: { opacity: 0, y: -80 },
+  hidden: { opacity: 0, y: -60 },
   visible: {
     opacity: 1,
     y: 0,
@@ -70,17 +70,17 @@ export default function Education() {
                 <h3 className="text-xl font-semibold text-[#E63946]">
                   {edu.title}
                 </h3>
-                <p className="text-gray-800">
+                <p className="text-gray-600">
                   <span className="font-medium">Institution:</span>{" "}
                   {edu.institution}
                 </p>
-                <p className="text-gray-800">
+                <p className="text-gray-600">
                   <span className="font-medium">Semester:</span> {edu.semester}
                 </p>
-                <p className="text-gray-800">
+                <p className="text-gray-600">
                   <span className="font-medium">Result:</span> {edu.result}
                 </p>
-                <p className="text-gray-800">
+                <p className="text-gray-600">
                   <span className="font-medium">Year:</span> {edu.year}
                 </p>
               </motion.div>

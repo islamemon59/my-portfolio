@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const slideDownVariants = {
-  hidden: { opacity: 0, y: -80 },
+  hidden: { opacity: 0, y: -60 },
   visible: {
     opacity: 1,
     y: 0,
@@ -33,7 +33,7 @@ const AboutMe = () => {
         </motion.h2>
 
         <motion.p
-          className="text-gray-800 text-lg leading-relaxed"
+          className="text-gray-600 text-lg leading-relaxed"
           variants={slideDownVariants}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         >
@@ -49,7 +49,7 @@ const AboutMe = () => {
         </motion.p>
 
         <motion.p
-          className="text-gray-800 text-lg leading-relaxed"
+          className="text-gray-600 text-lg leading-relaxed"
           variants={slideDownVariants}
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
         >
@@ -64,7 +64,7 @@ const AboutMe = () => {
         </motion.p>
 
         <motion.p
-          className="text-gray-800 text-lg leading-relaxed"
+          className="text-gray-600 text-lg leading-relaxed"
           variants={slideDownVariants}
           transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
         >

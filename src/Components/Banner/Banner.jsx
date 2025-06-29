@@ -6,7 +6,7 @@ import image from "../../assets/hero.png";
 
 
 const slideDownVariants = {
-  hidden: { opacity: 0, y: -80 },
+  hidden: { opacity: 0, y: -60 },
   visible: {
     opacity: 1,
     y: 0,
@@ -33,7 +33,7 @@ export default function Banner() {
         <h2 className="text-3xl md:text-5xl font-bold text-[#E63946]">
           <ReactTyped
             strings={["MERN Developer", "JS Developer", "React.js Developer"]}
-            typeSpeed={80}
+            typeSpeed={60}
             backSpeed={40}
             loop
           />

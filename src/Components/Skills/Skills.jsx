@@ -45,7 +45,7 @@ const skillsData = [
         name: "Tailwind CSS",
         icon: <SiTailwindcss />,
         description: "Utility-first CSS framework for rapid UI development",
-        proficiency: 80,
+        proficiency: 60,
       },
     ],
   },
@@ -56,7 +56,7 @@ const skillsData = [
         name: "Node.js",
         icon: <FaNodeJs />,
         description: "JavaScript runtime for backend development",
-        proficiency: 80,
+        proficiency: 60,
       },
       {
         name: "Express.js",
@@ -99,7 +99,7 @@ const skillsData = [
 
 // Updated Framer Motion variants for slide down animation
 const containerVariants = {
-  hidden: { opacity: 0, y: -80 },
+  hidden: { opacity: 0, y: -60 },
   visible: {
     opacity: 1,
     y: 0,
@@ -108,7 +108,7 @@ const containerVariants = {
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: -80 },
+  hidden: { opacity: 0, y: -60 },
   visible: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 1.5 } },
 };
 
