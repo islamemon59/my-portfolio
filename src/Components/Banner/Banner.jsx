@@ -2,18 +2,20 @@
 import { FaFacebookF, FaTwitter, FaGithub } from "react-icons/fa";
 import { ReactTyped } from "react-typed"; // corrected import here
 import { motion } from "framer-motion";
-import image from "../../assets/hero.png"
+import image from "../../assets/hero.png";
+
 
 const slideDownVariants = {
   hidden: { opacity: 0, y: -80 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 1, ease: "easeOut" },
+    transition: { duration: 1.5, ease: "easeOut" },
   },
 };
 
 export default function Banner() {
+  document.title = "Home";
   return (
     <section className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 bg-white max-w-6xl mx-auto overflow-hidden">
       {/* Left */}

@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
+
 const containerVariants = {
   hidden: { opacity: 0, y: -80 },
   visible: {
@@ -11,17 +12,18 @@ const containerVariants = {
     transition: {
       staggerChildren: 0.15,
       ease: "easeOut",
-      duration: 1,
+      duration: 1.5,
     },
   },
 };
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 0.6 } },
+  visible: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 1 } },
 };
 
 export default function Contact() {
+  document.title = "Contact";
   const contactData = [
     {
       title: "Email",
@@ -42,7 +44,6 @@ export default function Contact() {
       icon: <FaWhatsapp />,
     },
   ];
-
   return (
     <section
       id="contact"
@@ -52,7 +53,7 @@ export default function Contact() {
         className="max-w-4xl mx-auto text-center space-y-10"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.4 }}
         variants={containerVariants}
       >
         <motion.h2

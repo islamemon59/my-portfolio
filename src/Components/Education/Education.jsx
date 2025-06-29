@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaGraduationCap } from "react-icons/fa";
 
+
 const educationData = [
   {
     title: "Bachelor of Arts in English",
@@ -22,7 +23,7 @@ const containerVariants = {
     transition: {
       staggerChildren: 0.15,
       ease: "easeOut",
-      duration: 1,
+      duration: 1.5,
     },
   },
 };
@@ -33,13 +34,17 @@ const itemVariants = {
 };
 
 export default function Education() {
+  document.title = "Education";
   return (
-    <section id="education" className="px-4 pt-16 pb-20 md:py-20 md:px-16 bg-white text-black overflow-hidden">
+    <section
+      id="education"
+      className="px-4 pt-16 pb-20 md:py-20 md:px-16 bg-white text-black overflow-hidden"
+    >
       <motion.div
         className="max-w-4xl mx-auto space-y-12"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.3 }}
         variants={containerVariants}
       >
         <motion.h2

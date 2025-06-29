@@ -7,13 +7,17 @@ const slideDownVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 1, ease: "easeOut" },
+    transition: { duration: 1.5, ease: "easeOut" },
   },
 };
 
 const AboutMe = () => {
+  document.title = "About";
   return (
-    <section id="about" className="px-4 py-16 md:py-20 md:px-16 bg-white overflow-hidden">
+    <section
+      id="about"
+      className="px-4 py-20 md:py-20 md:px-16 bg-white overflow-hidden"
+    >
       <motion.div
         className="max-w-4xl mx-auto text-center space-y-10 rounded-lg"
         initial="hidden"

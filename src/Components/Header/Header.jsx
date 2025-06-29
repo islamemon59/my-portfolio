@@ -94,7 +94,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow px-6 py-4 space-y-4 text-s">
+        <div className="md:hidden bg-white shadow px-6 py-4 flex justify-between text-s">
           <Link
             to="hero"
             spy={true}
@@ -102,7 +102,7 @@ const Header = () => {
             duration={500}
             offset={-50}
             activeClass="active"
-            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
+            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[14px]"
           >
             Home
           </Link>
@@ -113,7 +113,7 @@ const Header = () => {
             duration={500}
             offset={-50}
             activeClass="active"
-            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
+            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[14px]"
           >
             About
           </Link>
@@ -124,7 +124,7 @@ const Header = () => {
             duration={500}
             offset={-50}
             activeClass="active"
-            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
+            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[14px]"
           >
             Skills
           </Link>
@@ -135,7 +135,7 @@ const Header = () => {
             duration={500}
             offset={-50}
             activeClass="active"
-            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
+            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[14px]"
           >
             Education
           </Link>
@@ -146,7 +146,7 @@ const Header = () => {
             duration={500}
             offset={-50}
             activeClass="active"
-            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[17px]"
+            className="nav-link cursor-pointer text-black hover:text-[#E63946] font-semibold text-[14px]"
           >
             Contact
           </Link>

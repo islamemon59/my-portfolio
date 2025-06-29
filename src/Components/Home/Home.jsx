@@ -6,8 +6,10 @@ import Skills from "../Skills/Skills";
 import Education from "../Education/Education";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
+import useActiveSectionTitle from "../../Hooks/useActiveSectionTitle";
 
 const Home = () => {
+  useActiveSectionTitle()
   return (
     <div>
       <Header />
