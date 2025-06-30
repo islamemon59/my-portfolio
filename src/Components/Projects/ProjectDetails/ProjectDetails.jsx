@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import { useParams, Link } from "react-router"; // fixed import
 import {
