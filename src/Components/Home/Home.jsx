@@ -21,20 +21,20 @@ const Home = () => {
         <Banner />
       </section>
 
-      <section id="about" className="md:py-10">
+      <section id="about">
         <AboutMe />
       </section>
 
-      <section id="skills" className="py-6 md:py-10">
+      <section id="skills">
         <Skills />
       </section>
-      <section id="education" className="py-6 md:py-10">
+      <section id="education">
         <Education />
       </section>
-      <section id="projects" className="py-6 md:py-10">
+      <section id="projects">
         <Projects projects={projects} />
       </section>
-      <section id="contact" className="py-6 md:py-10">
+      <section id="contact">
         <Contact />
       </section>
       <section id="footer">

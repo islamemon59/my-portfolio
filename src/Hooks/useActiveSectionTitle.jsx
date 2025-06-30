@@ -10,11 +10,11 @@ export default function useActiveSectionTitle() {
 
       // Adjust these numbers to match your actual section positions
       if (scrollY < 400) setActiveSection("Home");
-      else if (scrollY >= 400 && scrollY < 800) setActiveSection("About");
-      else if (scrollY >= 800 && scrollY < 1000) setActiveSection("Skills");
-      else if (scrollY >= 1000 && scrollY < 1200) setActiveSection("Education");
-      else if (scrollY >= 1200 && scrollY <1400) setActiveSection("Projects");
-      else setActiveSection("Contact");
+      else if (scrollY >= 600 && scrollY < 1400) setActiveSection("About");
+      else if (scrollY >= 1400 && scrollY < 1800) setActiveSection("Skills");
+      else if (scrollY >= 1800 && scrollY < 3000) setActiveSection("Education");
+      else if (scrollY >= 3000 && scrollY <3200) setActiveSection("Projects");
+      else if (scrollY >= 3200 && scrollY <3600) setActiveSection("Contact");
     };
 
     window.addEventListener("scroll", handleScroll);
