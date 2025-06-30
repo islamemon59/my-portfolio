@@ -26,7 +26,7 @@ const Projects = ({ projects }) => {
   return (
     <motion.section
       id="projects"
-      className=" px-4 md:px-16 py-16 md:py-20"
+      className=" px-4 md:px-16 py-20 md:py-20"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.3 }}
@@ -42,11 +42,7 @@ const Projects = ({ projects }) => {
         >
           My Projects
         </motion.h2>
-
-        <motion.div
-          className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
-          variants={itemVariants}
-        >
+        <motion.div className="grid gap-6 grid-cols-1" variants={itemVariants}>
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 
-
 const containerVariants = {
   hidden: { opacity: 0, y: -60 },
   visible: {
@@ -24,6 +23,7 @@ const itemVariants = {
 
 export default function Contact() {
   document.title = "Contact";
+
   const contactData = [
     {
       title: "Email",
@@ -44,6 +44,7 @@ export default function Contact() {
       icon: <FaWhatsapp />,
     },
   ];
+
   return (
     <section
       id="contact"
@@ -73,7 +74,9 @@ export default function Contact() {
               href={contact.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center justify-center p-6 border border-gray-200 rounded-xl shadow-md hover:shadow-xl transition duration-300 hover:scale-105"
+              className="flex flex-col items-center justify-center p-6 border border-gray-200 rounded-xl shadow-md
+                         transition-transform duration-300 transform-gpu will-change-transform
+                         hover:scale-105 hover:shadow-xl"
               variants={itemVariants}
             >
               <div className="text-3xl text-[#E63946] mb-3">{contact.icon}</div>
