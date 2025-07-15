@@ -47,7 +47,6 @@ const AboutMe = () => {
           <span className="font-medium text-[#E63946]">Node.js & Express</span>{" "}
           on the backend.
         </motion.p>
-
         <motion.p
           className="text-base-content/80 text-lg leading-relaxed"
           variants={slideDownVariants}

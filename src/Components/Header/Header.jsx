@@ -9,7 +9,7 @@ const Header = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-base-200/80 shadow z-10">
+    <nav className="fixed top-0 left-0 w-full h-[75px] bg-base-200/80 shadow z-10">
       <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
         {/* Left: Logo */}
         <Link

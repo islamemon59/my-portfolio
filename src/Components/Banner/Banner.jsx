@@ -6,6 +6,12 @@ import { motion } from "framer-motion";
 import * as THREE from "three";
 import NET from "vanta/dist/vanta.net.min";
 import image from "../../assets/hero.png";
+import Particles from "react-tsparticles";
+import BlurText from "../BlurText/BlurText";
+import ShinyText from "../ShinyText/ShinyText";
+import FallingText from "../FallingText/FallingText";
+import RotatingText from "../RotatingText/RotatingText";
+import Squares from "../Squares/Squares";
 
 const slideDownVariants = {
   hidden: { opacity: 0, y: -60 },
@@ -18,35 +24,52 @@ const slideDownVariants = {
 
 export default function Banner() {
   document.title = "Home";
-
+  const handleAnimationComplete = () => {
+    console.log("Animation completed!");
+  };
   return (
     <div className="overflow-hidden">
-      <section className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 max-w-6xl mx-auto overflow-hidden relative -z-10">
+      <section className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 max-w-6xl mx-auto overflow-hidden relative z-0">
         {/* Left */}
         <motion.div
-          className="flex-1 text-center md:text-left space-y-4 md:space-y-6 mt-28 md:mt-0 relative z-10"
+          className="flex-1 text-center md:text-left space-y-4 md:space-y-6 mt-28 md:mt-0 relative"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
           variants={slideDownVariants}
         >
-          <h1 className="text-4xl md:text-7xl font-bold text-base-content">
-            Emon Hossain
-          </h1>
+          <BlurText
+            text="Emon Hossain"
+            delay={150}
+            animateBy="words"
+            direction="top"
+            onAnimationComplete={handleAnimationComplete}
+            className="text-4xl md:text-7xl font-bold text-base-content"
+          />
+          <ShinyText
+            text="Passionate MERN Stack Developer crafting modern, responsive, and
+            user-friendly web applications"
+            disabled={false}
+            speed={3}
+            className="text-base-content/80 md:text-lg"
+          />
 
-          <p className="text-base-content/80 md:text-lg">
-            Passionate MERN Stack Developer crafting modern, responsive, and
-            user-friendly web applications.
-          </p>
-
-          <h2 className="text-2xl md:text-4xl font-bold text-[#E63946]">
-            <ReactTyped
-              strings={["MERN Developer", "JS Developer", "React.js Developer"]}
-              typeSpeed={60}
-              backSpeed={40}
-              loop
-            />
-          </h2>
+          <RotatingText
+            texts={[
+              "MERN Stack Developer",
+              "JS Developer",
+              "React.js Developer",
+            ]}
+            mainClassName="text-2xl md:text-4xl font-bold text-[#E63946]"
+            staggerFrom={"last"}
+            initial={{ y: "100%" }}
+            animate={{ y: 0 }}
+            exit={{ y: "-120%" }}
+            staggerDuration={0.025}
+            splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+            transition={{ type: "spring", damping: 30, stiffness: 400 }}
+            rotationInterval={2000}
+          />
 
           <div className="flex justify-center md:justify-start space-x-4">
             <a
@@ -74,7 +97,6 @@ export default function Banner() {
               <FaGithub size={30} />
             </a>
           </div>
-
           <a
             href="https://drive.google.com/file/d/1d721rxVs0D3VK27lAbAotWuqsZjgTX5k/view?usp=sharing"
             download

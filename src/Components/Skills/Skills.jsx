@@ -128,7 +128,7 @@ export default function Skills() {
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }}
       >
-        <h2 className="text-4xl font-extrabold text-red-600">
+        <h2 className="text-4xl font-extrabold text-[#E63946]">
           My <span>Skills</span>
         </h2>
 
@@ -149,7 +149,7 @@ export default function Skills() {
                     whileHover={{ scale: 1.1, rotate: -2 }}
                     whileTap={{ scale: 0.95 }}
                     className="group relative cursor-default rounded-xl p-6 flex flex-col items-center space-y-4
-                        shadow-md hover:shadow-2xl transition-transform duration-300 bg-base-200 text-base-content hover:ring-2 hover:ring-red-500 shadow-red-500"
+                        shadow-md hover:shadow-2xl transition-transform duration-300 bg-base-100 text-base-content hover:ring-2 hover:ring-red-500 shadow-red-500"
                   >
                     <motion.div
                       className="text-6xl transition-colors duration-300 group-hover:text-red-500"
