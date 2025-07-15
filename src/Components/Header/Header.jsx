@@ -89,7 +89,7 @@ const Header = () => {
         {/* Right: Download Resume button (Desktop) */}
         <div className="hidden md:block">
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1d721rxVs0D3VK27lAbAotWuqsZjgTX5k/view?usp=sharing"
             download
             className="btn bg-[#E63946] text-white border-none hover:bg-black transition"
           >
