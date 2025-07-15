@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,600;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,600;1,900&display=swap");
 @import "tailwindcss";
 @plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+}
 
 * {
   font-family: "Poppins", sans-serif;
@@ -29,4 +32,40 @@
 
 .nav-link.active::after {
   width: 100%;
+}
+
+/* BlinkingBackground.css */
+
+/* @keyframes blinkRed {
+  0%,
+  100% {
+    background-color: rgba(230, 57, 71, 0.071); /* very soft red */
+  /* }
+  50% {
+    background-color: rgba(231, 48, 63, 0.064); /* slightly stronger red */
+  /* }
+} */ 
+
+/* Apply animation to the whole body
+.blinking-background {
+  animation: blinkRed 3s infinite;
+} */
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+} 
+
+.blinking-circle {
+  width: 20px;          /* adjust size */
+  height: 20px;
+  border-radius: 50%;
+  background-color: #E63946;   /* red color */
+  position: absolute;
+  animation: blink 2s infinite;
+
 }

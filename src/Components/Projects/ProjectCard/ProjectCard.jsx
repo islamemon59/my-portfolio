@@ -8,7 +8,12 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import { FaGithub } from "react-icons/fa";
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiFirebase, SiExpress, SiMongodb } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiFirebase,
+  SiExpress,
+  SiMongodb,
+} from "react-icons/si";
 
 const icons = {
   FaReact,
@@ -27,7 +32,7 @@ const containerVariants = {
 export default function ProjectCard({ project }) {
   return (
     <motion.div
-      className="flex flex-col md:flex-row bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+      className="flex flex-col md:flex-row bg-base rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -57,7 +62,9 @@ export default function ProjectCard({ project }) {
 
       {/* Right: Project info */}
       <div className="md:w-1/2 w-full p-6 flex flex-col">
-        <h3 className="text-2xl font-bold text-[#E63946] mb-3">{project.name}</h3>
+        <h3 className="text-2xl font-bold text-[#E63946] mb-3">
+          {project.name}
+        </h3>
 
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.slice(0, 5).map((tech, idx) => {
@@ -75,7 +82,9 @@ export default function ProjectCard({ project }) {
           })}
         </div>
 
-        <p className="text-gray-700 flex-grow mb-6 line-clamp-5">{project.description}</p>
+        <p className="text-base-content/80 flex-grow mb-6 line-clamp-5">
+          {project.description}
+        </p>
 
         <div className="flex justify-between items-center mt-auto">
           <Link

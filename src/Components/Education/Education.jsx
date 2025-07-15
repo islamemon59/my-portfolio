@@ -32,58 +32,58 @@ export default function Education() {
   document.title = "Education";
 
   return (
-      <section
-        id="education"
-        className="px-4 py-20 md:py-20 md:px-16 bg-transparent text-black overflow-hidden"
+    <section
+      id="education"
+      className="px-4 py-20 md:py-20 md:px-16 bg-transparent text-black overflow-hidden"
+    >
+      <motion.div
+        className="max-w-4xl mx-auto space-y-12 overflow-hidden"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
+        variants={containerVariants}
       >
-        <motion.div
-          className="max-w-4xl mx-auto space-y-12"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
-          variants={containerVariants}
+        <motion.h2
+          className="text-4xl font-extrabold text-center text-[#E63946]"
+          variants={itemVariants}
         >
-          <motion.h2
-            className="text-4xl font-extrabold text-center text-[#E63946]"
-            variants={itemVariants}
-          >
-            Education Timeline
-          </motion.h2>
+          Education Timeline
+        </motion.h2>
 
-          <div className="flex justify-center items-center">
-            <div className="border-l-4 border-[#E63946] ml-6 space-y-10">
-              {educationData.map((edu, idx) => (
-                <motion.div
-                  key={idx}
-                  className="relative pl-6"
-                  variants={itemVariants}
-                >
-                  {/* Dot */}
-                  <span className="absolute -left-[14px] top-2 w-6 h-6 rounded-full bg-[#E63946] flex items-center justify-center text-white">
-                    <FaGraduationCap size={14} />
-                  </span>
+        <div className="flex justify-center items-center">
+          <div className="border-l-4 border-[#E63946] ml-6 space-y-10">
+            {educationData.map((edu, idx) => (
+              <motion.div
+                key={idx}
+                className="relative pl-6"
+                variants={itemVariants}
+              >
+                {/* Dot */}
+                <span className="absolute -left-[14px] top-2 w-6 h-6 rounded-full bg-[#E63946] flex items-center justify-center text-white">
+                  <FaGraduationCap size={14} />
+                </span>
 
-                  <h3 className="text-xl font-semibold text-[#E63946]">
-                    {edu.title}
-                  </h3>
-                  <p className="text-gray-600">
-                    <span className="font-medium">Institution:</span>{" "}
-                    {edu.institution}
-                  </p>
-                  <p className="text-gray-600">
-                    <span className="font-medium">Semester:</span> {edu.semester}
-                  </p>
-                  <p className="text-gray-600">
-                    <span className="font-medium">Result:</span> {edu.result}
-                  </p>
-                  <p className="text-gray-600">
-                    <span className="font-medium">Year:</span> {edu.year}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
+                <h3 className="text-xl font-semibold text-[#E63946]">
+                  {edu.title}
+                </h3>
+                <p className="text-base-content/80">
+                  <span className="font-medium">Institution:</span>{" "}
+                  {edu.institution}
+                </p>
+                <p className="text-base-content/80">
+                  <span className="font-medium">Semester:</span> {edu.semester}
+                </p>
+                <p className="text-base-content/80">
+                  <span className="font-medium">Result:</span> {edu.result}
+                </p>
+                <p className="text-base-content/80">
+                  <span className="font-medium">Year:</span> {edu.year}
+                </p>
+              </motion.div>
+            ))}
           </div>
-        </motion.div>
-      </section>
+        </div>
+      </motion.div>
+    </section>
   );
 }

@@ -17,39 +17,11 @@ const slideDownVariants = {
 };
 
 export default function Banner() {
-  const [vantaEffect, setVantaEffect] = useState(null);
-  const vantaRef = useRef(null);
-
-  useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        NET({
-          el: vantaRef.current,
-          THREE,
-          mouseControls: true,
-          touchControls: true,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          scale: 1.0,
-          scaleMobile: 1.0,
-          color: 0xe63946, // main color
-          backgroundColor: 0xffffff, // background white
-          points: 12.0,
-          maxDistance: 20.0,
-          spacing: 15.0,
-        })
-      );
-    }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
-  }, [vantaRef, vantaEffect]);
-
   document.title = "Home";
 
   return (
-    <div ref={vantaRef} className="overflow-hidden">
-      <section className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 max-w-6xl mx-auto overflow-hidden relative">
+    <div className="overflow-hidden">
+      <section className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 max-w-6xl mx-auto overflow-hidden relative -z-10">
         {/* Left */}
         <motion.div
           className="flex-1 text-center md:text-left space-y-4 md:space-y-6 mt-28 md:mt-0 relative z-10"
@@ -58,11 +30,11 @@ export default function Banner() {
           viewport={{ once: false, amount: 0.3 }}
           variants={slideDownVariants}
         >
-          <h1 className="text-4xl md:text-7xl font-bold text-black">
+          <h1 className="text-4xl md:text-7xl font-bold text-base-content">
             Emon Hossain
           </h1>
 
-          <p className="text-gray-600 text-base md:text-lg">
+          <p className="text-base-content/80 md:text-lg">
             Passionate MERN Stack Developer crafting modern, responsive, and
             user-friendly web applications.
           </p>

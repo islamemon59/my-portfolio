@@ -43,7 +43,7 @@ document.title = "Projects";
           >
             My Projects
           </motion.h2>
-          <motion.div className="grid gap-6 grid-cols-1" variants={itemVariants}>
+          <motion.div className="grid gap-6 grid-cols-1 overflow-hidden" variants={itemVariants}>
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
