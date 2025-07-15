@@ -1,17 +1,10 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useRef, useState } from "react";
 import { FaFacebookF, FaTwitter, FaGithub } from "react-icons/fa";
-import { ReactTyped } from "react-typed";
 import { motion } from "framer-motion";
-import * as THREE from "three";
-import NET from "vanta/dist/vanta.net.min";
 import image from "../../assets/hero.png";
-import Particles from "react-tsparticles";
 import BlurText from "../BlurText/BlurText";
 import ShinyText from "../ShinyText/ShinyText";
-import FallingText from "../FallingText/FallingText";
 import RotatingText from "../RotatingText/RotatingText";
-import Squares from "../Squares/Squares";
 
 const slideDownVariants = {
   hidden: { opacity: 0, y: -60 },
