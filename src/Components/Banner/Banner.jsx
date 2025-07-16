@@ -50,7 +50,7 @@ export default function Banner() {
           <RotatingText
             texts={[
               "MERN Stack Developer",
-              "JS Developer",
+              "Front-End Developer",
               "React.js Developer",
             ]}
             mainClassName="text-2xl md:text-4xl font-bold text-[#E63946]"
