@@ -1,7 +1,9 @@
 /* eslint-disable no-unused-vars */
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import { motion } from "framer-motion";
+
 
 // Motion variants
 const containerVariants = {
@@ -23,33 +25,40 @@ const itemVariants = {
 };
 
 const Projects = ({ projects }) => {
-document.title = "Projects";
+  document.title = "Projects";
   return (
-      <motion.section
-        id="projects"
-        className="px-4 md:px-16 py-20 md:py-20 bg-transparent overflow-hidden"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-        variants={containerVariants}
+    <motion.section
+      id="projects"
+      className="px-4 md:px-16 py-20 md:py-20 bg-transparent overflow-hidden"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.4 }}
+      variants={containerVariants}
+    >
+      <motion.div
+        className="max-w-6xl mx-auto space-y-10"
+        variants={itemVariants}
       >
-        <motion.div
-          className="max-w-6xl mx-auto space-y-10"
+        <motion.h2
+          className="text-3xl md:text-4xl font-extrabold text-[#E63946] text-center"
           variants={itemVariants}
         >
-          <motion.h2
-            className="text-3xl md:text-4xl font-extrabold text-[#E63946] text-center"
-            variants={itemVariants}
-          >
-            My Projects
-          </motion.h2>
-          <motion.div className="grid gap-6 grid-cols-1 overflow-hidden" variants={itemVariants}>
-            {projects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-          </motion.div>
+          My Projects
+        </motion.h2>
+
+        <div>
+
+        </div>
+        <motion.div
+          className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          variants={itemVariants}
+        >
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
         </motion.div>
-      </motion.section>
+      </motion.div>
+    </motion.section>
   );
 };
 

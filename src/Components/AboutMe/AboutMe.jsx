@@ -22,7 +22,7 @@ const AboutMe = () => {
         className="max-w-4xl mx-auto text-center space-y-8 bg-base/70 backdrop-blur-sm rounded-lg p-6 md:p-10 shadow-lg overflow-hidden"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.4 }}
         variants={slideDownVariants}
       >
         <motion.h2

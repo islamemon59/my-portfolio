@@ -126,7 +126,7 @@ export default function Skills() {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.4 }}
       >
         <h2 className="text-4xl font-extrabold text-[#E63946]">
           My <span>Skills</span>
