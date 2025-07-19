@@ -46,22 +46,25 @@
   },
 
   {
-    "id": "pay-bills",
-    "name": "Pay Bills",
+    "id": "staffhub",
+    "name": "StaffHub",
     "images": [
-      "https://i.ibb.co/n8qd9k3H/Screenshot-2025-06-29-180454.png",
-      "https://i.ibb.co/1GWcgrFf/Screenshot-2025-06-30-112124.png",
-      "https://i.ibb.co/Xxrnd7Ww/Screenshot-2025-06-30-112149.png"
+      "https://i.ibb.co/m5fD9h3y/Screenshot-2025-07-19-183631.png",
+      "https://i.ibb.co/2fL3g3y/Screenshot-2025-07-19-184412.png",
+      "https://i.ibb.co/7tKfpPLc/Screenshot-2025-07-19-184422.png"
     ],
     "technologies": [
       { "name": "React", "icon": "FaReact" },
       { "name": "Tailwind CSS", "icon": "SiTailwindcss" },
-      { "name": "Firebase", "icon": "SiFirebase" }
+      { "name": "Express.js", "icon": "SiExpress" },
+      { "name": "MongoDB", "icon": "SiMongodb" },
+      { "name": "Firebase", "icon": "SiFirebase" },
+      { "name": "Stripe", "icon": "SiStripe" }
     ],
-    "description": "A modern bill management system website for managing and paying utility bills online easily.",
-    "liveLink": "https://pay-bill-management.netlify.app/",
-    "githubLink": "https://github.com/islamemon59/bill-management-system",
-    "challenges": "Integrating real-time payment APIs and user authentication flow.",
-    "futurePlan": "Add auto-payment scheduling and mobile app."
+    "description": "A secure, full-stack, role-based employee management system that tracks work hours, manages payroll, and handles HR/admin operations.",
+    "liveLink": "https://staffhub-employee-management.web.app/",
+    "githubLink": "https://github.com/islamemon59/staffhub-client",
+    "challenges": "Implementing secure role-based route protection and integrating real-time Stripe payments with monthly restrictions.",
+    "futurePlan": "Add mobile app version and Slack integration for workflow updates."
   }
 ]
